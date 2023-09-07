@@ -1,0 +1,75 @@
+
+
+.hangman-container {
+  text-align: center;
+  background-color: #15173371;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 2px 1px 30px rgb(255, 179, 0);
+  width: 80%;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+h1 {
+  font-size: 34px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 24px;
+  color: #fa9907;
+}
+
+p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.letter-buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #ff7b00;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(254, 221, 221);
+  cursor: pointer;
+}
+
+.game-message {
+  font-size: 20px;
+  font-weight: bold;
+  color: #16e703;
+  margin-top: 20px;
+}
+
+.restart-button {
+  background-color: #0a1af6;
+}
+
+.vertical-hangman {
+  text-align: center;
+  background-color: rgba(226, 226, 226, 0.632);
+  padding: 3%;
+  border-radius: 10px;
+  width: 30%;
+  max-width: 150px;
+  margin: 10px auto;
+}
+
+
+@media (max-width: 768px) {
+  .hangman-container {
+    width: 90%;
+  }
+
+  .vertical-hangman {
+    width: 50%;
+  }
+}
