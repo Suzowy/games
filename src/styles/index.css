@@ -36,3 +36,32 @@ img {
 }
 
 
+footer{
+  background: linear-gradient(
+    to right,
+    rgba(255, 68, 58, 0.653),
+    rgba(152, 13, 244, 0.655),
+    rgba(19, 140, 245, 0.708),
+    rgba(40, 199, 111, 0.897),
+    rgba(252, 197, 31, 0.785),
+    rgba(244, 111, 3, 0.817),
+    rgba(240, 5, 44, 0.468)
+  );
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding:5px;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.5s
+}
+
+footer a :hover{
+color: rgb(244, 5, 208);
+transform: scale(1.1);
+}
