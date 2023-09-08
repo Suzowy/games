@@ -2,23 +2,33 @@
 
 .hangman-container {
   text-align: center;
-  background-color: #15173371;
+  background-image: linear-gradient(to bottom, rgba(21, 23, 51, 0.249),rgba(9, 10, 22, 0.938));
   padding: 3%;
   border-radius: 10px;
   box-shadow: 2px 1px 30px rgb(255, 179, 0);
-  width: 80%;
   max-width: 500px;
   margin: 10px auto;
 }
 
-h1 {
-  font-size: 34px;
-  color: #ffffff;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h2 {
+  font-size: 34px;
+  color: #e65f2a;
+}
+
+h3 {
   font-size: 24px;
-  color: #fa9907;
+  color: #ffffff;
+  font-weight: bold;
+
 }
 
 p {
@@ -50,7 +60,7 @@ button {
 }
 
 .restart-button {
-  background-color: #0a1af6;
+  background-color: #e44a0d;
 }
 
 .vertical-hangman {

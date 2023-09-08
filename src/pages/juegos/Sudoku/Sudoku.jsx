@@ -4,9 +4,11 @@ import './Sudoku.css';
 
 const backgroundstyle = {
   backgroundImage: 'url("https://w.forfun.com/fetch/33/33658246d3edb0759f6ed1bd9059d395.jpeg")',
-  backgroundSize: 'cover',
+  backgroundSize: '100% 100%',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
+  minHeight: '70vh',
+  animation: 'fadeIn 1.5s ease-in-out forwards',
 
 };
 

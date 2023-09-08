@@ -1,17 +1,30 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "IBM Plex Mono", monospace;
 }
 
+h1 {
+  background: linear-gradient(
+    to right,
+    rgba(255, 68, 58, 0.653),
+    rgba(152, 13, 244, 0.655),
+    rgba(19, 140, 245, 0.708),
+    rgba(40, 199, 111, 0.897),
+    rgba(252, 197, 31, 0.785),
+    rgba(244, 111, 3, 0.817),
+    rgba(240, 5, 44, 0.468)
+  );
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -21,3 +34,5 @@ img {
   margin: 0 auto;
   height: 200px;
 }
+
+

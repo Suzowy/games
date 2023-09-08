@@ -9,6 +9,10 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -19,22 +23,31 @@ const Nav = () => {
         </div>
         <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={closeMenu}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={closeMenu}>About</Link>
           </li>
           <li className="nav-item">
-            <Link to="/dashboard">login</Link>
+            <Link to="/dashboard" onClick={closeMenu}>login</Link>
           </li>
           <li className="nav-item">
-            <Link to="/ticTacToe">TicTacToe</Link>
+            <Link to="/ticTacToe" onClick={closeMenu}>Tres en raya</Link>
           </li>
           <li className="nav-item">
-            <Link to="/sudoku">Sudoku</Link>
+            <Link to="/sudoku" onClick={closeMenu}>Sudoku</Link>
           </li>
           <li className="nav-item">
-            <Link to="/hangman">Hangman</Link>
+            <Link to="/hangman" onClick={closeMenu}>Ahorcado</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/dashboard" onClick={closeMenu}>¿Quién es quién?</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/dashboard" onClick={closeMenu}>Juego de memoria</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/dashboard" onClick={closeMenu}>Atrapa al topo</Link>
           </li>
         </ul>
       </nav>
@@ -43,5 +56,6 @@ const Nav = () => {
     </div>
   );
 };
+
 
 export default Nav;

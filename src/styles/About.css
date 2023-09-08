@@ -3,12 +3,12 @@
   width: 50%;
   padding: 3%;
   background-color: rgba(0, 0, 0, 0.817);
-  box-shadow: 0 4px 8px rgb(181, 31, 245);
+  box-shadow: 0 4px 8px rgb(51, 254, 251);
 }
 
 .titulo {
   font-size: 36px;
-  color: #9d11e3e8;
+  color: #11d5e3e8;
   margin-bottom: 20px;
 }
 
@@ -17,11 +17,15 @@
   line-height: 1.7;
   color: #ffffff;
 }
-
-.resaltado {
-  color: #ffca2cff;
+.resaltado a {
+  color: #e8fa47;
+  text-decoration: none;
 }
 
+.resaltado a:hover {
+  color: #4aff0d;
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
 .texto {
@@ -31,4 +35,6 @@
   background-color: rgba(0, 0, 0, 0.817);
   box-shadow: 0 4px 8px rgb(181, 31, 245);
   margin: 10px auto;
-}}
+}
+
+}

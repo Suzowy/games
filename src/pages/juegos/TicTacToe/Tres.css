@@ -3,19 +3,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #15173371;
+  background-image: linear-gradient(to bottom, rgba(21, 23, 51, 0.055),rgb(9, 10, 22));
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 1px 30px rgba(254, 40, 236, 0.694);
-  max-width: 90%;
+  box-shadow: 2px 1px 30px rgba(255, 22, 92, 0.694);
+  max-width: 500px;
+  height: 500px;
   margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .game-board {
   background-color: rgba(52, 12, 53, 0.582);
-  border: 2px solid rgb(255, 138, 255);
+  border: 2px solid rgb(255, 138, 171);
   border-radius: 10px;
-  margin: 2% 0;
+  margin: 8% 0;
   padding: 10px;
 }
 
@@ -40,7 +50,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background-color: rgb(230, 96, 230);
+  background-color: rgb(230, 96, 138);
   color: black;
   border-radius: 5px;
   cursor: pointer;
@@ -48,20 +58,20 @@
 }
 
 .square:hover {
-  background-color: #d7119f;
+  background-color: #e20c3e;
 }
 
 .game-info {
   font-size: 30px;
   font-weight: bold;
   margin: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(229, 69, 80);
 }
 
 button {
   font-size: 18px;
   font-weight: bold;
-  background-color: #ff00b3;
+  background-color: #f30938;
   border: 3px solid rgb(253, 248, 253);
   border-radius: 5px;
   padding: 20px;

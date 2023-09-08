@@ -2,14 +2,10 @@ import React from 'react';
 
 const Default = () => {
     const imageStyles = {
-        width: '100%',
-        height: '100vh',
-        objectFit: 'contain',
-        position: 'fixed',
-        top: '70%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        zIndex: -1,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        minHeight: '60vh',
     };
 
     return (

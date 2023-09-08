@@ -3,9 +3,11 @@ import './Hangman.css';
 
 const backgroundStyle = {
   backgroundImage: 'url("https://w.forfun.com/fetch/33/33658246d3edb0759f6ed1bd9059d395.jpeg")',
-  backgroundSize: 'cover',
+  backgroundSize: '100% 100%',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
+  minHeight: '70vh',
+  animation: 'fadeIn 1.5s ease-in-out forwards',
 };
 
 const hangmanStyles = {
@@ -109,8 +111,7 @@ const Hangman = () => {
   return (
     <div style={backgroundStyle}>
       <div className="hangman-container">
-        <h1>Juego del ahorcado</h1>
-        <p>Intentos restantes: {remainingAttempts}</p>
+        <h3>Intentos restantes: {remainingAttempts}</h3>
         {renderVerticalHangman()} {/* Renderiza el muñeco del ahorcado verticalmente */}
         <h2>Palabra: {hiddenWord}</h2>
         <p>Letras utilizadas: {usedLetters.join(', ')}</p>
