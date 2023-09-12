@@ -1,91 +1,51 @@
-import "../styles/About.css";
-import { Link } from "react-router-dom";
+
+import React from 'react';
+
+import '../styles/About.css';
+
+
+
 const About = () => {
-  const backgroundStyle = {
-    backgroundImage:
-      'url("https://static.vecteezy.com/system/resources/previews/003/762/458/original/puzzles-and-riddles-neon-light-icons-set-sudoku-trivia-quiz-nonogram-optical-illusion-jigsaw-logic-games-mental-exercise-brain-teaser-glowing-signs-isolated-illustrations-vector.jpg")',
-    backgroundSize: "contain",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right",
-  };
 
   return (
-    <div style={backgroundStyle}>
-      <div className="texto">
-        <h2 className="titulo" data-text="Efecto Neon">
-          juegos clasicos
-        </h2>
-        <p>
-          Los juegos clásicos son una fuente inagotable de diversión para
-          personas de todas las edades. Desde desafiantes rompecabezas hasta
-          juegos de adivinanzas y competencias estratégicas, estos títulos han
-          resistido la prueba del tiempo y siguen siendo populares en la
-          actualidad. Aquí tienes algunos de los juegos clásicos más queridos:
-        </p>
-        <p>
-          <span class="resaltado">
-            <Link to="/TicTacToe">Tres en raya</Link>
-          </span>
-          : Un juego de estrategia para dos jugadores en un tablero de 3x3. Los
-          jugadores se turnan para colocar sus fichas en el tablero con el
-          objetivo de obtener tres de sus fichas en línea horizontal, vertical o
-          diagonal antes que el oponente.
-        </p>
-        <p>
-          <span class="resaltado">
-            {" "}
-            <Link to="/sudoku">Sudoku</Link>
-          </span>
-          : Un juego de lógica y números que desafía tu capacidad para llenar un
-          tablero 9x9 con dígitos del 1 al 9 sin repetir ningún número en filas,
-          columnas o regiones. Cada sudoku presenta un rompecabezas único que
-          requiere habilidades de resolución de problemas y paciencia.
-        </p>
-        <p>
-          <span class="resaltado">
-            <Link to="/Hangman">El ahorcado</Link>
-          </span>
-          : Un clásico juego de palabras en el que un jugador elige una palabra
-          secreta y el otro jugador intenta adivinarla sugiriendo letras. Por
-          cada letra incorrecta, se dibuja una parte de un ahorcado. El objetivo
-          es adivinar la palabra antes de que el ahorcado esté completo.
-        </p>
-        <p>
-          <span class="resaltado">
-            <Link to="/Dashboard">¿quien es quien?</Link>
-          </span>
-          : Un juego de adivinanzas en el que los jugadores deben hacer
-          preguntas sí o no para adivinar el personaje secreto del oponente. El
-          objetivo es eliminar personajes de una cuadrícula hasta que quede un
-          único personaje, que será el ganador.
-        </p>
-        <p>
-          <span class="resaltado">
-            <Link to="/Dashboard">Juego de memoria</Link>
-          </span>
-          , este juego implica voltear cartas en busca de coincidencias. Los
-          jugadores deben recordar la ubicación de las cartas para hacer
-          coincidir parejas y ganar puntos.
-        </p>
+    <div className="texto">
+      <h2 className="titulo">
+      Bienvenido a Rompe Cocos
+      </h2>
 
-        <p>
-          <span class="resaltado">
-            <Link to="/Dashboard">Atrapa al topo</Link>
-          </span>
-          : Un juego de velocidad y reflejos en el que los jugadores intentan
-          atrapar a un topo que aparece y desaparece en agujeros en un tablero.
-          Este juego suele ser una competencia cronometrada.
-        </p>
-
-        <p>
-          Estos juegos clásicos son una excelente manera de pasar el tiempo y
-          desafiar tu mente en cualquier lugar y en cualquier momento. Puedes
-          disfrutar de ellos en forma de juegos de mesa físicos o versiones
-          digitales en línea, lo que los hace accesibles para todos. ¡Así que
-          elige tu favorito y comienza a jugar!
-        </p>
-      </div>
+<p>
+En nuestra página de juegos clásicos, te invitamos a un emocionante viaje al pasado y al presente de los juegos que han cautivado a generaciones enteras. Sumérgete en una experiencia única donde los juegos atemporales se combinan con la comodidad de la tecnología moderna.
+</p>
+<h4>La Colección de Clásicos</h4>
+<p>
+Nuestra extensa colección de juegos clásicos abarca una variedad de géneros, desde desafiantes rompecabezas hasta juegos de estrategia y lógica. Revive los momentos de diversión que has disfrutado durante años y descubre nuevos títulos que te sorprenderán.
+</p>
+<h4>Rompecabezas para Desafiar tu Mente</h4>
+<p>
+Pon a prueba tus habilidades con juegos como el "Tres en Raya", un desafío estratégico para dos jugadores, o el "Sudoku", un juego de lógica numérica que desafía tu capacidad de resolver puzzles únicos.
+</p>
+<h4>Juegos de Palabras y Adivinanzas</h4>
+<p>
+Si eres amante de las palabras, disfruta de juegos de palabras clásicos como el "El Ahorcado", donde deberás adivinar la palabra secreta antes de que se complete el dibujo del ahorcado. ¡O juega a "¿Quién es Quién?", un juego de adivinanza que te mantendrá entretenido durante horas!
+</p>
+<h4>Diversión para Todas las Edades</h4>
+<p>
+Nuestra página de juegos clásicos es adecuada para jugadores de todas las edades. Ya sea que quieras desafiar a un amigo en un juego de estrategia o pasar tiempo de calidad en familia, encontrarás opciones que se adaptan a todos los gustos.
+</p>
+<h4>Accesibilidad en Línea</h4>
+<p>
+La belleza de nuestros juegos clásicos es que puedes disfrutarlos en línea sin descargas ni complicaciones. Simplemente visita nuestro sitio web y comienza a jugar de inmediato.
+</p>
+<h4>Un Viaje al Pasado, Listo para el Futuro</h4>
+<p>
+En Juegos Clásicos, combinamos la nostalgia de los juegos que amas con la accesibilidad de la tecnología moderna. Ya sea que estés buscando una dosis de diversión rápida o quieras sumergirte en un desafío a largo plazo, estamos aquí para acompañarte en tu viaje de entretenimiento clásico.
+</p>
+<h4>Únete a la Diversión</h4>
+<p>
+Te invitamos a explorar nuestra página de juegos clásicos, disfrutar de los títulos icónicos y descubrir por qué estos juegos han resistido el paso del tiempo. ¡La diversión clásica nunca pasa de moda, así que comienza a jugar ahora mismo y revive la emoción de los juegos que conoces y amas!
+      </p>
     </div>
   );
 };
+
 export default About;

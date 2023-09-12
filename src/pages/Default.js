@@ -6,6 +6,8 @@ const Default = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         minHeight: '60vh',
+        borderRadius: '50%',
+        marginBottom: '50px',
     };
 
     return (

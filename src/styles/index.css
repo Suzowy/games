@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 body {
-  background-color: #000000;
+  background-color: #151733ff;
   margin: 0;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -23,10 +23,7 @@ h1 {
   padding: 10px;
   font-family: 'Orbitron', sans-serif;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 
 img {
   max-width: 100%;
@@ -34,7 +31,9 @@ img {
   margin: 0 auto;
   height: 200px;
 }
-
+header{
+  background-color: #000000;
+}
 
 footer{
   background: linear-gradient(
@@ -56,12 +55,6 @@ footer{
 footer a {
   text-decoration: none;
   color: #000000;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
-  transition: transform 0.5s
-}
-
-footer a :hover{
-color: rgb(244, 5, 208);
-transform: scale(1.1);
 }

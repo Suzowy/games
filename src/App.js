@@ -1,3 +1,4 @@
+
 import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./pages/Nav";
@@ -12,7 +13,6 @@ import Hangman from "./pages/juegos/Hangman/Hangman";
 function App() {
   return (
     <div>
-    
       <Routes>
         <Route path="/" element={<Nav />}>
           <Route path="/about" element={<About />} />

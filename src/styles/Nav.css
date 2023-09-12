@@ -1,3 +1,88 @@
+
+.nav-list details {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-list details summary {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fd6ce7;
+  font-weight: bold;
+}
+
+.nav-list details ul.submenu {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  display: none;
+  position: absolute;
+  background-color: #151733ff;
+  border-radius: 5px;
+  z-index: 2;
+}
+.nav-list details ul.submenu li.nav-item:nth-child(1) a {
+  color: #fffe04;
+}
+
+.nav-list details ul.submenu li.nav-item:nth-child(2) a {
+  color: #03fcf9;
+}
+
+.nav-list details ul.submenu li.nav-item:nth-child(3) a {
+  color: #fd77e2;
+}
+
+.nav-list details ul.submenu li.nav-item:nth-child(4) a {
+  color: #f71d03;
+}
+
+.nav-list details ul.submenu li.nav-item:nth-child(5) a {
+  color: #ba53ff;
+}
+
+.nav-list details ul.submenu li.nav-item:nth-child(6) a {
+  color: #fc9f1c;
+}
+
+.nav-list details ul.submenu li.nav-item:nth-child(7) a {
+  color: #04ff71;
+}
+
+
+.nav-list details:hover ul.submenu {
+  display: block;
+}
+
+.nav-list details ul.submenu li.nav-item {
+  display: block;
+  margin: 0;
+}
+
+.nav-list details ul.submenu li.nav-item a {
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+.nav-list details ul.submenu li.nav-item a:hover {
+  color: #87ff2c;
+}
+
+
+.nav-list details .submenu-toggle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.nav-list details[open] .submenu-toggle {
+  transform: rotate(180deg);
+}
+
+
 .navbar {
   background-color: rgb(21, 23, 51);
   padding: 10px;
@@ -19,68 +104,13 @@
   color: #00d2f2;
   font-weight: bold;
 }
+
 .nav-item:nth-child(1) a{
-  color: #fffe04;
-}
-.nav-item:nth-child(2) a{
-  color: #03fcf9;
-}
-.nav-item:nth-child(3) a{
-  color: #fe95fb;
-}
-.nav-item:nth-child(4) a{
-  color: #f71d03;
-}
-.nav-item:nth-child(5) a{
-  color: #ba53ff;
-}
-.nav-item:nth-child(6) a{
-  color: #fc9f1c;
+  text-decoration: none;
+  color: #daf200;
+  font-weight: bold;
 }
 
-.nav-item:nth-child(7) a{
-  color: #2aff04;
-}
-.nav-item:nth-child(8) a{
-  color: #03fcf9;
-}
-.nav-item:nth-child(9) a{
-  color: #fe95fb;
-}
-
-.nav-item a:hover {
-  color: #87ff2c;
-}
-.nav-list.active .nav-item:nth-child(1) a {
-  color: #f3ff0b;
-}
-.nav-list.active .nav-item:nth-child(2) a {
-  color: #33ffee;
-}
-
-.nav-list.active .nav-item:nth-child(3) a {
-  color: #fc52ff;
-}
-.nav-list.active .nav-item:nth-child(4) a {
-  color: #fd170b;
-}
-.nav-list.active .nav-item:nth-child(5) a {
-  color: #9d11fa;
-}
-.nav-list.active .nav-item:nth-child(6) a {
-  color: #ff7605;
-}
-
-.nav-list.active .nav-item:nth-child(7) a {
-  color: #30ff0b;
-}
-.nav-list.active .nav-item:nth-child(8) a {
-  color: #33ffee;
-}
-
-.nav-list.active .nav-item:nth-child(9) a {
-  color: #fc52ff;
-}
 .menu-toggle {
   display: none;
   flex-direction: column;
