@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Tres.css';
 
 const backgroundstyle = {
-  backgroundImage: 'url("https://w.forfun.com/fetch/33/33658246d3edb0759f6ed1bd9059d395.jpeg")',
   backgroundSize: '100% 100%',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',

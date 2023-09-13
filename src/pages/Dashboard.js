@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Dashboard.css';
 
-function JuegoCard({ titulo, descripcion, enlace, }) {
+function Juegotarjeta({ titulo, descripcion, enlace, }) {
     return (
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">{titulo}</h5>
-          <p className="card-text">{descripcion}</p>
+      <div className="tarjeta">
+        <div className="tarjeta-body">
+          <h5 className="tarjeta-title">{titulo}</h5>
+          <p className="tarjeta-text">{descripcion}</p>
           <Link to={enlace} className="btn btn-primary">
             Jugar
           </Link>
@@ -118,9 +118,9 @@ function JuegoCard({ titulo, descripcion, enlace, }) {
         <p>
           Estos juegos clásicos son una excelente manera de pasar el tiempo y desafiar tu mente...
         </p>
-        <div className="card-deck">
+        <div className="tarjeta-deck">
           {juegos.map((juego, index) => (
-            <JuegoCard
+            <Juegotarjeta
               key={index}
               titulo={juego.titulo}
               descripcion={juego.descripcion}
