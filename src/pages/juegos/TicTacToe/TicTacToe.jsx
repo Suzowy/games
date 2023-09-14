@@ -83,7 +83,7 @@ function TicTacToe() {
         </div>
         <div className="game-info">
           <div>{status}</div>
-          <button onClick={() => setBoard(Array(9).fill(null))}>Reset</button>
+          <button className='boton' onClick={() => setBoard(Array(9).fill(null))}>Reset</button>
         </div>
       </div>
     </div>

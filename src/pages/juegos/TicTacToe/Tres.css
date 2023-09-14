@@ -34,10 +34,12 @@
 @media (max-width: 768px) {
   .game {
     max-width: 100%;
+    margin: 20px;
+    margin-bottom: 50px;
   }
 
   .game-board {
-    margin: 10px 0;
+    margin: 10px;
   }
 }
 
@@ -69,15 +71,17 @@
   color: rgb(229, 69, 80);
 }
 
-button {
+.boton {
+  display: flex;
+  justify-items: center;
   font-size: 18px;
-  font-weight: bold;
   background-color: #f30938;
-  border: 3px solid rgb(253, 248, 253);
+  border: 2px solid rgb(253, 248, 253);
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   cursor: pointer;
-  margin: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 button:hover {
