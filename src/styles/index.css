@@ -1,27 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 body {
-  background-color: #151733ff;
+  background: linear-gradient(
+    to right,
+    rgb(0, 10, 61),
+    rgb(0, 0, 0),
+    rgb(0, 12, 50)
+  );
   margin: 0;
   font-family: "IBM Plex Mono", monospace;
+
 }
 
 h1 {
   background: linear-gradient(
     to right,
-    rgba(255, 68, 58, 0.653),
-    rgba(152, 13, 244, 0.655),
-    rgba(19, 140, 245, 0.708),
-    rgba(40, 199, 111, 0.897),
-    rgba(252, 197, 31, 0.785),
-    rgba(244, 111, 3, 0.817),
-    rgba(240, 5, 44, 0.468)
+    rgb(3, 179, 255),
+    rgba(0, 8, 255, 0.655),
+    rgb(1, 4, 59),
+    rgb(2, 0, 23),
+    rgb(0, 0, 0),
+    rgb(2, 0, 23),
+    rgb(1, 4, 59),
+    rgba(3, 3, 244, 0.817),
+    rgb(3, 179, 255)
   );
-  color: rgb(0, 0, 0);
+  color: #fffe04ff;
   text-align: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   font-family: 'Orbitron', sans-serif;
+
 }
 
 
@@ -29,7 +38,7 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  height: 200px;
+  height: 150px;
 }
 header{
   background-color: #000000;
@@ -38,23 +47,23 @@ header{
 footer{
   background: linear-gradient(
     to right,
-    rgba(255, 68, 58, 0.653),
-    rgba(152, 13, 244, 0.655),
-    rgba(19, 140, 245, 0.708),
-    rgba(40, 199, 111, 0.897),
-    rgba(252, 197, 31, 0.785),
-    rgba(244, 111, 3, 0.817),
-    rgba(240, 5, 44, 0.468)
+    rgba(58, 245, 255, 0.653),
+    rgba(0, 8, 255, 0.655),
+    rgb(1, 4, 59),
+    rgba(0, 0, 0, 0.897),
+    rgb(1, 4, 59),
+    rgba(3, 3, 244, 0.817),
+    rgba(5, 213, 240, 0.468)
   );
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding:5px;
-  font-family: 'Orbitron', sans-serif;
   text-decoration: none;
+  
 }
 footer a {
   text-decoration: none;
-  color: #000000;
+  color: #cecece;
   font-size: 15px;
   font-weight: bold;
 }

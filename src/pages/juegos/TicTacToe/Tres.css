@@ -3,15 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(21, 23, 51, 0.055),rgb(9, 10, 22));
+  background-color: rgba(84, 84, 84, 0.153);
+  border: 1px solid rgb(255, 0, 230);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 1px 10px rgba(255, 22, 92, 0.694);
   max-width: 500px;
-  height: 500px;
+  height: 600px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
+
+
 
 @keyframes fadeIn {
   0% {
@@ -23,11 +25,8 @@
 }
 
 .game-board {
-  background-color: rgba(52, 12, 53, 0.582);
-  border: 2px solid rgb(255, 138, 171);
-  border-radius: 10px;
-  margin: 8% 0;
-  padding: 10px;
+  padding: 50px;
+  margin: 10px;
 }
 
 
@@ -38,9 +37,7 @@
     margin-bottom: 50px;
   }
 
-  .game-board {
-    margin: 10px;
-  }
+
 }
 
 .board-row {
@@ -55,7 +52,7 @@
   text-align: center;
   background-color: rgb(230, 96, 138);
   color: black;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   margin: 2px;
 }
@@ -65,9 +62,12 @@
 }
 
 .game-info {
-  font-size: 30px;
+  background-color: rgba(84, 84, 84, 0.274);
+  border: 1px solid rgb(255, 116, 241);
+  border-radius: 8px;
+  font-size: 25px;
+  padding: 20px;
   font-weight: bold;
-  margin: 10px;
   color: rgb(229, 69, 80);
 }
 
@@ -75,16 +75,15 @@
   display: flex;
   justify-items: center;
   font-size: 18px;
-  background-color: #f30938;
-  border: 2px solid rgb(253, 248, 253);
+  background-color: #000000;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
-  padding: 10px;
   cursor: pointer;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 5px auto;
+
 }
 
 button:hover {
-  background-color: #b5ff08;
-  color: rgb(0, 0, 0);
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
 }

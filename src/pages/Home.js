@@ -5,6 +5,7 @@ const Home =() => {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       minHeight: '70vh',
+      border: '1px solid #fffe04',
       };
 
       return (

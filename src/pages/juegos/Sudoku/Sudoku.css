@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(21, 23, 51, 0.144),rgb(9, 10, 22));
+  background-color: rgba(84, 84, 84, 0.153);
+  border: 1px solid rgb(0, 217, 255);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 1px 10px rgba(169, 37, 240, 0.676);
   max-width: 500px;
   height: auto;
   margin: 10px auto;
@@ -34,7 +34,6 @@
   font-size: 24px;
   text-align: center;
   border: 2px solid #3afbde;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -52,7 +51,7 @@
   justify-content: center;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 10px;
   cursor: pointer;
   margin: 10px;
@@ -61,7 +60,7 @@
 .sudoku-controls button {
   padding: 5px 10px;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: rgb(58, 248, 255);
   background-color: #3f0364;
   color: #ffffff;
@@ -70,7 +69,8 @@
 }
 
 .sudoku-controls button:hover {
-  background-color: #b4ff33;
+  background-color: #00ff26;
+  border-color: rgb(255, 255, 255);
   color: rgb(4, 4, 4);
 }
 @media (max-width: 768px) {

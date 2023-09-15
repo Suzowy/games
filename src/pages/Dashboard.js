@@ -111,7 +111,7 @@ function Juegotarjeta({ titulo, descripcion, enlace, }) {
     ];
   
     return (
-      <div className="texto">
+      <div className="catalogo">
         <h2 className="titulo">
           Catalogo de juegos
         </h2>

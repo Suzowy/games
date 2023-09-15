@@ -37,10 +37,7 @@ const Card = ({ imagePath, onClick, flipped }) => {
   const handleClick = () => {
     if (!isFlipped) {
       setFlipped(true);
-      setTimeout(() => {
-        setFlipped(false);
-        onClick();
-      }, 2000);
+      onClick();
     }
   };
 
@@ -66,7 +63,6 @@ const Card = ({ imagePath, onClick, flipped }) => {
   );
 };
 
-
 const Memory = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
@@ -88,8 +84,8 @@ const Memory = () => {
       setCanFlip(false); // Desactiva la capacidad de voltear más tarjetas temporalmente
 
       const [firstCard, secondCard] = flippedCards;
-      if (firstCard.name === secondCard.name) {
-        // Coincidencia encontrada, deja las cartas volteadas
+      if (firstCard.name[0] === secondCard.name[0]) {
+        // Coincidencia encontrada en la primera letra, deja las cartas volteadas
         setFlippedCards([]);
         setCanFlip(true); // Reactiva la capacidad de voltear tarjetas
       } else {
@@ -128,7 +124,7 @@ const Memory = () => {
   };
 
   return (
-    <div className="game-board">
+    <div className="board">
       {cards.map((card) => (
         <Card
           key={card.id}

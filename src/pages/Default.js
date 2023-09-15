@@ -5,7 +5,7 @@ const Default = () => {
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        minHeight: '60vh',
+        minHeight: '50vh',
         borderRadius: '50%',
         marginBottom: '50px',
     };
