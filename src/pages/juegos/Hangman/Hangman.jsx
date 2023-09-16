@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './Hangman.css';
 
 const backgroundStyle = {
-  
   backgroundSize: '100% 100%',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
@@ -66,7 +65,7 @@ const Hangman = () => {
   const handleRestart = useCallback(() => {
     chooseRandomWord();
     setUsedLetters([]);
-    setRemainingAttempts(10);
+    setRemainingAttempts(6);
     setGameMessage('');
     setHangmanState(0);
   }, [chooseRandomWord]);
@@ -82,9 +81,9 @@ const Hangman = () => {
       setGameMessage('¡Has ganado!');
     } else if (remainingAttempts === 0) {
       setGameMessage(`Has perdido... La palabra era "${selectedWord}".`);
-      handleRestart();
+      // handleRestart(); // Comenta o elimina esta línea para evitar reiniciar automáticamente
     }
-  }, [hiddenWord, remainingAttempts, selectedWord, handleRestart]);
+  }, [hiddenWord, remainingAttempts, selectedWord]);
 
   const renderVerticalHangman = () => {
     const parts = [
@@ -127,7 +126,12 @@ const Hangman = () => {
           ))}
         </div>
         <p className="game-message">{gameMessage}</p>
-        <button className="restart-button" onClick={handleRestart}>Empezar de nuevo</button>
+        {gameMessage && (
+          <div className="game-won">
+            <h2>{gameMessage}</h2>
+            <button className="restart-button" onClick={handleRestart}>Empezar de nuevo</button>
+          </div>
+        )}
       </div>
     </div>
   );
