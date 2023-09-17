@@ -15,7 +15,6 @@ function Juegotarjeta({ titulo, descripcion, enlace, }) {
       </div>
     );
   }
-  
   const Dashboard = () => {
     const juegos = [
       {
@@ -91,7 +90,7 @@ function Juegotarjeta({ titulo, descripcion, enlace, }) {
             />
           </>
         ),
-        enlace: '/default',
+        enlace: '/Memory',
       },
       {
         titulo: 'Atrapa al topo',

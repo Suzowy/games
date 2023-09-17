@@ -6,13 +6,12 @@ const Default = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         minHeight: '50vh',
-        borderRadius: '50%',
         marginBottom: '50px',
     };
 
     return (
         <div>
-            <img src="https://img.freepik.com/premium-vector/oops-neon-signs-style-text_118419-2285.jpg" alt="Descripción de la imagen" style={imageStyles} />
+            <img src="https://t3.ftcdn.net/jpg/02/78/91/74/360_F_278917446_WBT0ERUXdgltzvCSHIaWPZCPWoFAk1w7.jpg" alt="comming soon" style={imageStyles} />
         </div>
     );
 }

@@ -92,29 +92,49 @@
 }
 
 .game-won h2 {
-  font-size: 30px;
-  color: #46ffe6;
+  text-align: center;
+  font-size: 25px;
+  color: #ff1cbb;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 /* Estilos para el botón de reinicio */
 .game-won button {
-  background-color: #fb00ff;
+  margin: 20PX;
+  background-color: #767676;
   color: #ffffff;
-  font-size: 24px;
-  padding: 10px 20px;
-  border: 2px solid rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 2px solid #ddff00;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .game-won button:hover {
-  background-color: #eaff00;
+  background-color: #ddff00;
   border: 2px solid rgb(255, 255, 255);
   color: black;
 }
 
+.backHome{
+  text-decoration: none;
+  margin: 20PX;
+  background-color: #767676;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 2px solid #2fff00;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.backHome:hover {
+  background-color: #2fff00;
+  border: 2px solid rgb(255, 255, 255);
+  color: black;
+}
 
 
 
@@ -127,5 +147,12 @@
 
   .board {
     padding: 20px;
+  }
+
+  .game-won h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 20PX;
+ 
   }
 }

@@ -1,8 +1,8 @@
 
 
 .texto {
-  background-color: rgba(0, 0, 0, 0.502);
-  border: 1px solid #ffca2cff;
+  background-color: rgba(0, 0, 0, 0.566);
+  border: 1px solid rgb(158, 255, 131);
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -11,19 +11,22 @@
 }
 
 .titulo {
-  color: #0ff8f3ff;
+  margin-bottom: 30px;
+  color: rgb(77, 255, 252);
   text-align: center;
 }
 
 
 h4 {
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   color: #52fc3c;
 }
 
 p {
-  font-size: 16px;
+  text-align: center;
+  font-size: 20px;
   line-height: 1.5;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -31,18 +34,16 @@ p {
 
 @media (max-width: 768px) {
   .titulo {
+   
     font-size: 24px;
   }
   h2 {
     font-size: 22px;
   }
-  h3 {
-    font-size: 18px;
-  }
   h4 {
     font-size: 16px;
   }
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }

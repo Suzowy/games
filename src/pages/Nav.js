@@ -52,7 +52,7 @@ const Nav = () => {
                   <Link to="/hangman" onClick={closeMenu}>Ahorcado</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/default" onClick={closeMenu}>¿Quién es quién?</Link>
+                  <Link to="/guessWho" onClick={closeMenu}>¿Quién es quién?</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/memory" onClick={closeMenu}>Juego de memoria</Link>

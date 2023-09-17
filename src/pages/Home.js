@@ -5,12 +5,11 @@ const Home =() => {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       minHeight: '70vh',
-      border: '1px solid #fffe04',
+      border: '1px solid #82c5f5',
       };
 
       return (
         <div style={backgroundStyle}>
-
         </div>
       );
     };

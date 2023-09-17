@@ -10,6 +10,7 @@ import TicTacToe from "./pages/juegos/TicTacToe/TicTacToe";
 import Sudoku from "./pages/juegos/Sudoku/Sudoku";
 import Hangman from "./pages/juegos/Hangman/Hangman";
 import Memory from "./pages/juegos/Memory/Memory";
+import GuessWho from "./pages/juegos/GuessWho/GuessWho";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Sudoku" element={<Sudoku />} />
           <Route path="/Hangman" element={<Hangman />} />
           <Route path="/Memory" element={<Memory />} />
+          <Route path="/GuessWho" element={<GuessWho />} />
         </Route>
       </Routes>
     </div>
