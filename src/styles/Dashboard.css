@@ -1,6 +1,6 @@
 
 .catalogo {
-  background-color: rgba(228, 222, 212, 0.936);
+  background-color: rgba(0, 0, 0, 0.909);
   margin: 0 auto;
   padding: 50px;
   text-align: center;
@@ -17,7 +17,7 @@
   margin: 0 10px;
   margin-bottom: 20px;
   border: 2px solid rgb(0, 191, 255);
-  background-color: rgba(253, 253, 253, 0.582);
+  background-color: rgba(253, 253, 253, 0.74);
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
 }
@@ -47,7 +47,7 @@
   color: rgb(0, 11, 39);
 }
 .catalogo p{
-  color: black;
+  color: rgb(59, 59, 59);
   font-size: 15px;
   font-weight: bold;
 }

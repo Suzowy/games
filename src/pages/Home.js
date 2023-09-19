@@ -5,7 +5,7 @@ const Home =() => {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       minHeight: '70vh',
-      animation: 'fadeInOut 5s linear 1 forwards',
+      animation: 'fadeInOut 3s linear 1 forwards',
       opacity: '0',
       };
 

@@ -113,9 +113,7 @@ function Juegotarjeta({ titulo, descripcion, enlace, }) {
         <h2 className="titulo">
           Catalogo de juegos
         </h2>
-        <p>
-          Estos juegos clásicos son una excelente manera de pasar el tiempo y desafiar tu mente...
-        </p>
+      
         <div className="tarjeta-deck">
           {juegos.map((juego, index) => (
             <Juegotarjeta
