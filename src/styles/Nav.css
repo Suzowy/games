@@ -1,7 +1,6 @@
 
 .nav-list details {
   display: inline-block;
-  margin-right: 20px;
 }
 
 .nav-list details summary {
@@ -14,19 +13,21 @@
 .nav-list details ul.submenu {
   list-style-type: none;
   padding: 0;
-  text-align: left;
+  text-align: center;
   display: none;
   position: absolute;
-  background-color: #151733ff;
-  border-radius: 5px;
+  background:rgba(6, 33, 90, 0.89);
+  border-radius:10px;
   z-index: 2;
+
 }
+
 .nav-list details ul.submenu li.nav-item:nth-child(1) a {
   color: #fffe04;
 }
 
 .nav-list details ul.submenu li.nav-item:nth-child(2) a {
-  color: #fd77e2;
+  color: #f9c9f8ff;
 }
 
 .nav-list details ul.submenu li.nav-item:nth-child(3) a {
@@ -38,7 +39,7 @@
 }
 
 .nav-list details ul.submenu li.nav-item:nth-child(5) a {
-  color: #ba53ff;
+  color: #c061ff;
 }
 
 .nav-list details ul.submenu li.nav-item:nth-child(6) a {
@@ -84,8 +85,8 @@
 
 
 .navbar {
-  background-color: rgb(26, 9, 53);
-  padding: 10px;
+  background:rgb(6, 32, 90);
+  padding: 5px;
 }
 
 .nav-list {
@@ -101,13 +102,13 @@
 
 .nav-item a {
   text-decoration: none;
-  color: #00d2f2;
+  color: #00ddff;
   font-weight: bold;
 }
 
 .nav-item:nth-child(1) a{
   text-decoration: none;
-  color: #daf200;
+  color: #e5ff00;
   font-weight: bold;
 }
 
@@ -116,7 +117,7 @@
   flex-direction: column;
   cursor: pointer;
   padding: 5px;
-  background-color: #1f494e;
+  background:rgb(6, 32, 90);
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -129,7 +130,7 @@
 .bar {
   width: 30px;
   height: 3px;
-  background-color: #00d2f2;
+  background-color: #8dcbffff;
   margin: 4px 0;
 }
 
@@ -137,7 +138,7 @@
   .nav-list {
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.756);
+    background:rgba(6, 33, 90, 0.95);
     position: absolute;
     top: 10px;
     left: 0;

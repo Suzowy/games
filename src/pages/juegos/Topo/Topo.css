@@ -1,0 +1,30 @@
+
+/* Topo.css */
+
+.topoGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Ajusta la altura según tus necesidades */
+}
+
+.hole {
+  position: relative;
+  width: 200px; /* Ajusta el tamaño del agujero según tus necesidades */
+  height: 200px; /* Ajusta el tamaño del agujero según tus necesidades */
+  margin: 10px; /* Ajusta el margen entre agujeros según tus necesidades */
+  overflow: hidden;
+}
+
+.dirt {
+  width: 100%;
+  height: 100%;
+}
+
+.mole {
+  position: absolute;
+  top: 100%; /* El mole está oculto detrás del agujero inicialmente */
+  left: 0;
+  transition: top 0.3s ease; /* Agrega una transición suave para la aparición/desaparición */
+  visibility: hidden; /* Inicialmente oculto */
+}

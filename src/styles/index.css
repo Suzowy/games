@@ -1,65 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+  font-family: 'DM Mono', monospace;
+  }
+
 body {
-  background-color: #000000;
+  background-color: #d6d0c7ff;
   margin: 0;
-  font-family: "IBM Plex Mono", monospace;
 
 }
 
-h1 {
-  background: linear-gradient(
-    to right,
-    rgb(3, 179, 255),
-    rgba(0, 8, 255, 0.655),
-    rgb(1, 4, 59),
-    rgb(2, 0, 23),
-    rgb(0, 0, 0),
-    rgb(2, 0, 23),
-    rgb(1, 4, 59),
-    rgba(3, 3, 244, 0.817),
-    rgb(3, 179, 255)
-  );
+header {
+  background: black;
   color: #fffe04ff;
   text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  padding: 20px;
-  font-family: 'Orbitron', sans-serif;
 
 }
 
-
+h1{
+  margin-top: 50px;
+  font-family: 'Press Start 2P', cursive;
+}
 img {
   max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  height: 150px;
+  height: 160px;
 }
-header{
-  background-color: #000000;
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
 }
 
 footer{
   background: linear-gradient(
     to right,
-    rgba(58, 245, 255, 0.653),
-    rgba(0, 8, 255, 0.655),
-    rgb(1, 4, 59),
-    rgba(0, 0, 0, 0.897),
-    rgb(1, 4, 59),
-    rgba(3, 3, 244, 0.817),
-    rgba(5, 213, 240, 0.468)
+    rgb(58, 245, 255),
+    rgb(24, 70, 255),
+    rgb(6, 26, 105),
+    rgb(2, 4, 30),
+    black,
+    rgb(2, 4, 30),
+    rgb(6, 26, 105),
+    rgb(24, 70, 255),
+    rgb(5, 213, 240)
   );
-  color: rgb(255, 255, 255);
+  color: rgb(212, 253, 195);
   text-align: center;
-  margin-top: 30px;
-  padding:5px;
+  padding:50px;
   text-decoration: none;
-  
+
 }
 footer a {
+  margin: 10px;
   text-decoration: none;
-  color: #cecece;
-  font-size: 15px;
+  color: #ffffff;
+  font-size: 10px;
   font-weight: bold;
+}
+footer p{
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    
+    display: block;
+  }
+
+  h1{
+    margin-top: 0;
+    font-size: 30px;
+  }
+
+
 }

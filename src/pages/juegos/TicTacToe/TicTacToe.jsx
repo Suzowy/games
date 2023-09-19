@@ -96,7 +96,7 @@ function TicTacToe() {
   );
 
   const winner = calculateWinner(board);
-  const status = winner ? `Winner: ${winner}` : `Next player: ${currentPlayer}`;
+  const status = winner ? `Winner: ${winner}` : `Es el turno de: ${currentPlayer}`;
 
   useEffect(() => {
     if (winner) {

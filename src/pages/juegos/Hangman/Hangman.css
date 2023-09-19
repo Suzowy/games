@@ -2,13 +2,14 @@
 
 .hangman-container {
   text-align: center;
-  background-color: rgba(84, 84, 84, 0.094);
+  background-color: rgba(0, 0, 0, 0.909);
   border: 1px solid rgb(255, 0, 0);
-  padding: 3%;
+  padding: 10px;
   border-radius: 10px;
   max-width: 500px;
+  height: 600px;
   margin: 10px auto;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 @keyframes fadeIn {
@@ -21,11 +22,13 @@
 }
 
 h2 {
+  padding: 20px;
   font-size: 34px;
-  color: #e65f2a;
+  color: #e75555;
 }
 
 h3 {
+  padding: 20px;
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
@@ -46,10 +49,10 @@ button {
   font-size: 20px;
   padding: 5px 10px;
   margin: 5px;
-  background-color: #ff3300;
+  background-color: #ff4517;
   color: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 2px 2px 10px rgb(254, 221, 221);
+  box-shadow: 1px 1px 3px rgb(255, 210, 168);
   cursor: pointer;
 }
 
@@ -90,20 +93,6 @@ button {
   color: black;
 }
 
-.restart-button {
-  font-size: 18px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-.restart-button:hover {
-  background-color: #218838;
-}
 
 .vertical-hangman {
   text-align: center;
@@ -118,7 +107,8 @@ button {
 
 @media (max-width: 768px) {
   .hangman-container {
-    width: 90%;
+    width: 95%;
+    margin:10px;
   }
 
   .vertical-hangman {

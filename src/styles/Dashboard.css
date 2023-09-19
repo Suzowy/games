@@ -1,42 +1,55 @@
 
 .catalogo {
-  background-color: rgba(84, 84, 84, 0.153);
-  border: 1px solid rgb(252, 243, 70);
-  max-width: 40%;
+  background-color: rgba(228, 222, 212, 0.936);
   margin: 0 auto;
-  padding: 20px;
-  margin-bottom: 50px;
+  padding: 50px;
   text-align: center;
 }
 
+.tarjeta-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .tarjeta {
-  width: 60%;
-  margin: 0 auto;
+  width: 25%;
+  margin: 0 10px;
   margin-bottom: 20px;
-  border: 1px solid rgb(0, 191, 255);
-  background: rgba(255, 255, 255, 0.66);
+  border: 2px solid rgb(0, 191, 255);
+  background-color: rgba(253, 253, 253, 0.582);
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
 }
 
+/* Estilos adicionales para la tarjeta si es necesario */
+
+
 .tarjeta:hover {
   transform: translateY(-5px);
   border: 2px solid rgb(86, 255, 8);
-  box-shadow: 0 2px 10px rgb(249, 249, 249);
+  box-shadow: 0 4px 8px rgb(32, 31, 31);
 }
 
 .tarjeta-title {
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
-  color: rgb(255, 0, 183);
-  font-size: 1.25rem;
+  color: rgba(146, 18, 210, 0.979);
+  font-size: 15px;
+  font-weight: 200;
 }
 
 .tarjeta-text {
   padding: 20px;
   font-size: 1rem;
   color: rgb(0, 11, 39);
+}
+.catalogo p{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .btn-primary {
@@ -74,13 +87,15 @@ padding: 5px;
 
   .tarjeta {
     width:100%;
+    height: auto;
     margin-bottom: 20px;
   }
   .tarjeta-title {
-    font-size: 1.1rem;
+    padding: 10px;
   }
   .tarjeta-text {
-    font-size: 0.9rem;
+    font-size: 15px;
   }
+
 
 }

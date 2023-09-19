@@ -11,6 +11,8 @@ import Sudoku from "./pages/juegos/Sudoku/Sudoku";
 import Hangman from "./pages/juegos/Hangman/Hangman";
 import Memory from "./pages/juegos/Memory/Memory";
 import GuessWho from "./pages/juegos/GuessWho/GuessWho";
+import Topo from "./pages/juegos/Topo/Topo";
+
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           <Route path="/Hangman" element={<Hangman />} />
           <Route path="/Memory" element={<Memory />} />
           <Route path="/GuessWho" element={<GuessWho />} />
+          <Route path="/Topo" element={<Topo />} />
         </Route>
       </Routes>
     </div>
