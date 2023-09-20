@@ -3,7 +3,9 @@
 * {
   font-family: 'DM Mono', monospace;
   }
-
+  .mode-transition {
+    transition: background-color 0.5s ease;
+  }
   .bi-moon-stars {
    margin-top: 10px;
    margin-left: 10px;
