@@ -9,7 +9,7 @@ const Default = () => {
         minHeight: '70vh',
         
            animation: 'fadeInOut 3s linear 1 forwards',
-        opacity: '0',
+        opacity: '1',
     };
 
     return (

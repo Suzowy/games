@@ -1,4 +1,20 @@
+.light-mode {
+  .hangman-container{
+  background-color: rgba(197, 255, 255, 0.671);
+}
+.hangman-container h3 {
+  color: #ff6905;
+}
 
+.hangman-container p {
+  font-size: 18px;
+  color: #2e2d2d;
+  margin-bottom: 10px;
+}
+.hangman-container button{
+background-color: #e75c5c;
+}
+}
 
 .hangman-container {
   text-align: center;
@@ -45,7 +61,7 @@ p {
   margin-top: 20px;
 }
 
-button {
+.hangman-container button {
   font-size: 20px;
   padding: 5px 10px;
   margin: 5px;

@@ -1,3 +1,21 @@
+.light-mode {
+  .catalogo{
+    background-color: #fdfae5;
+  }
+  .titulo{
+  color: rgb(1, 140, 227);
+  }
+  
+  .tarjeta {
+    background-color: rgb(255, 254, 251);
+  }
+  
+  .tarjeta-title {
+    color: rgb(255, 0, 200);
+  }
+  
+  }
+
 
 .catalogo {
   background-color: rgba(0, 0, 0, 0.909);
@@ -17,18 +35,15 @@
   margin: 0 10px;
   margin-bottom: 20px;
   border: 2px solid rgb(0, 191, 255);
-  background-color: rgba(253, 253, 253, 0.74);
+  background-color: rgba(232, 231, 231, 0.966);
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
 }
 
-/* Estilos adicionales para la tarjeta si es necesario */
-
-
 .tarjeta:hover {
   transform: translateY(-5px);
   border: 2px solid rgb(86, 255, 8);
-  box-shadow: 0 4px 8px rgb(32, 31, 31);
+  box-shadow: 0 4px 10px rgb(110, 110, 110);
 }
 
 .tarjeta-title {

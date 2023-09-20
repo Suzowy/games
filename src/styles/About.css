@@ -1,4 +1,20 @@
+.light-mode {
+.texto{
+  background-color: #fdfae5;
+}
+.titulo{
+color: rgb(1, 140, 227);
+}
 
+.texto h4 {
+  color: rgb(0, 183, 255);
+}
+
+.texto p {
+  color: #000000;
+}
+
+}
 
 .texto {
   background-color: rgba(0, 0, 0, 0.909);

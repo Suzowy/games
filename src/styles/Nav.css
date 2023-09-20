@@ -1,3 +1,23 @@
+.light-mode {
+  .navbar {
+    background:rgba(11, 103, 129, 0.751);
+    padding: 5px;
+  }
+  .nav-list details ul.submenu {
+
+    background:rgba(11, 103, 129, 0.922);
+
+  }
+
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      background:rgb(11, 103, 129);
+
+    }
+
+}}
+
 
 .nav-list details {
   display: inline-block;
@@ -6,17 +26,17 @@
 .nav-list details summary {
   cursor: pointer;
   text-decoration: underline;
-  color: #fd6ce7;
+  color: #fe5ae5;
   font-weight: bold;
 }
 
 .nav-list details ul.submenu {
   list-style-type: none;
   padding: 0;
-  text-align: center;
+  text-align: left;
   display: none;
   position: absolute;
-  background:rgba(6, 33, 90, 0.89);
+  background:rgba(6, 33, 90, 0.961);
   border-radius:10px;
   z-index: 2;
 

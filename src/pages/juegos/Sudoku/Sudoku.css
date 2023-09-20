@@ -1,3 +1,8 @@
+.light-mode {
+  .sudoku{
+  background-color: rgba(197, 255, 255, 0.671);
+}}
+
 .sudoku {
   display: flex;
   flex-direction: column;
@@ -10,7 +15,7 @@
   height: 600px;
   margin: 10px auto;
   margin-top: 50px;
-  
+
 }
 
 @keyframes fadeIn {
