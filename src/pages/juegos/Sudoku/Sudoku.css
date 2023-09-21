@@ -1,7 +1,8 @@
 .light-mode {
-  .sudoku{
-  background-color: rgba(197, 255, 255, 0.671);
-}}
+  .sudoku {
+    background-color: rgba(197, 255, 255, 0.671);
+  }
+}
 
 .sudoku {
   display: flex;
@@ -9,13 +10,12 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.909);
   border: 1px solid rgb(0, 217, 255);
-  padding:50px;
+  padding: 50px;
   border-radius: 10px;
   max-width: 500px;
   height: 600px;
   margin: 10px auto;
   margin-top: 50px;
-
 }
 
 @keyframes fadeIn {
@@ -78,8 +78,7 @@
     display: flex;
     margin: 6px;
   }
-  .sudoku{
-   margin: 10px;
-
+  .sudoku {
+    margin: 10px;
   }
 }

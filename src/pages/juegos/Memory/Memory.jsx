@@ -156,7 +156,7 @@ const Memory = () => {
     }));
     setCards(resetCards);
     setCanFlip(true);
-    setTimeLeft(10);
+    setTimeLeft(0);
     setMatchedCards([]);
     setGameWon(false);
   };

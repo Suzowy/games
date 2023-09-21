@@ -1,19 +1,19 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import './Tres.css';
+import React, { useState, useEffect, useCallback } from "react";
+import "./Tres.css";
 
 const backgroundStyle = {
-  backgroundSize: '100% 100%',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  minHeight: '70vh',
-  animation: 'fadeIn 1.5s ease-in-out forwards',
+  backgroundSize: "100% 100%",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  minHeight: "70vh",
+  animation: "fadeIn 1.5s ease-in-out forwards",
 };
 
 function TicTacToe() {
   const [board, setBoard] = useState(Array(9).fill(null));
-  const [currentPlayer, setCurrentPlayer] = useState('X');
+  const [currentPlayer, setCurrentPlayer] = useState("X");
   const [isStarted, setIsStarted] = useState(false);
-  const [gameMessage, setGameMessage] = useState('');
+  const [gameMessage, setGameMessage] = useState("");
 
   const calculateWinner = (squares) => {
     const lines = [
@@ -28,7 +28,11 @@ function TicTacToe() {
     ];
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
         return squares[a];
       }
     }
@@ -40,8 +44,8 @@ function TicTacToe() {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
         const squaresCopy = [...squares];
-        squaresCopy[i] = 'O';
-        if (calculateWinner(squaresCopy) === 'O') {
+        squaresCopy[i] = "O";
+        if (calculateWinner(squaresCopy) === "O") {
           return i; // Este movimiento ganaría el juego
         }
       }
@@ -51,8 +55,8 @@ function TicTacToe() {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
         const squaresCopy = [...squares];
-        squaresCopy[i] = 'X';
-        if (calculateWinner(squaresCopy) === 'X') {
+        squaresCopy[i] = "X";
+        if (calculateWinner(squaresCopy) === "X") {
           return i; // Este movimiento bloquearía al jugador X de ganar
         }
       }
@@ -71,9 +75,9 @@ function TicTacToe() {
 
   const handleRestart = useCallback(() => {
     setBoard(Array(9).fill(null));
-    setCurrentPlayer('X');
+    setCurrentPlayer("X");
     setIsStarted(false);
-    setGameMessage('');
+    setGameMessage("");
   }, []);
 
   const handleClick = (i) => {
@@ -86,7 +90,7 @@ function TicTacToe() {
     }
     boardCopy[i] = currentPlayer;
     setBoard(boardCopy);
-    setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
+    setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
   };
 
   const renderSquare = (i) => (
@@ -96,14 +100,16 @@ function TicTacToe() {
   );
 
   const winner = calculateWinner(board);
-  const status = winner ? `Winner: ${winner}` : `Es el turno de: ${currentPlayer}`;
+  const status = winner
+    ? `Winner: ${winner}`
+    : `Es el turno de: ${currentPlayer}`;
 
   useEffect(() => {
     if (winner) {
       setGameMessage(`¡El jugador ${winner} ha ganado!`);
     } else if (!board.includes(null)) {
-      setGameMessage('¡Empate! El juego ha terminado sin un ganador.');
-    } else if (currentPlayer === 'O') {
+      setGameMessage("¡Empate! El juego ha terminado sin un ganador.");
+    } else if (currentPlayer === "O") {
       // Llamada a la función para que juegue la máquina
       const computerMove = calculateBestMove(board);
       if (computerMove >= 0) {
@@ -139,7 +145,9 @@ function TicTacToe() {
       {gameMessage && (
         <div className="game-won">
           <h2>{gameMessage}</h2>
-          <button className="restart-button" onClick={handleRestart}>Volver a jugar</button>
+          <button className="restart-button" onClick={handleRestart}>
+            Volver a jugar
+          </button>
           <a href="/" className="backHome">
             <svg
               xmlns="http://www.w3.org/2000/svg"

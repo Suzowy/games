@@ -1,19 +1,18 @@
 .light-mode {
-.texto{
-  background-color: #fdfae5;
-}
-.titulo{
-color: rgb(1, 140, 227);
-}
+  .texto {
+    background-color: #fdfae5;
+  }
+  .titulo {
+    color: rgb(1, 140, 227);
+  }
 
-.texto h4 {
-  color: rgb(0, 183, 255);
-}
+  .texto h4 {
+    color: rgb(0, 183, 255);
+  }
 
-.texto p {
-  color: #000000;
-}
-
+  .texto p {
+    color: #000000;
+  }
 }
 
 .texto {
@@ -25,7 +24,6 @@ color: rgb(1, 140, 227);
   margin-bottom: 50px;
   margin-top: 50px;
   text-align: justify;
-
 }
 
 .titulo {
@@ -33,9 +31,8 @@ color: rgb(1, 140, 227);
   color: rgb(129, 38, 203);
   text-align: center;
   font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
-
 
 h4 {
   text-align: center;
@@ -51,24 +48,22 @@ h4 {
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 @media (max-width: 768px) {
-
-  .texto{
+  .texto {
     background-color: rgba(0, 0, 0, 0.909);
     margin: 10px;
   }
   .titulo {
-    font-size:20px;
+    font-size: 20px;
   }
 
   h4 {
     font-size: 20px;
   }
 
-.texto p {
-text-align: center;
-}
+  .texto p {
+    text-align: center;
+  }
 }

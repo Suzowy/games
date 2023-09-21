@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Press+Start+2P&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Press+Start+2P&family=VT323&display=swap");
 
 * {
-  font-family: 'DM Mono', monospace;
-  }
-  .mode-transition {
-    transition: background-color 0.5s ease;
-  }
-  .bi-moon-stars {
-   margin-top: 10px;
-   margin-left: 10px;
-  }
+  font-family: "DM Mono", monospace;
+}
+.mode-transition {
+  transition: 1s ease;
+}
+.bi-moon-stars {
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
-  .bi-brightness-high{
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+.bi-brightness-high {
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
 /* Estilos para el modo claro */
-.light-mode{
-  background-color:#ece8e8; ;
+.light-mode {
+  background-color: #ece8e8;
 }
 /* Estilos para el modo oscuro */
 .dark-mode {
@@ -29,32 +29,27 @@
 body {
   background-color: #d6d0c7ff;
   margin: 0;
-
 }
 
 .light-mode header {
   background: #ece8e8;
-  color: rgb(238, 0, 255);
+  color: #ff9999;
 }
-.light-mode footer{
-  
-    background: linear-gradient(
-      to right,
-      rgb(58, 245, 255),
-      #42879a,
-      rgb(6, 49, 105),
-      rgba(2, 4, 30, 0.934),
-      rgba(0, 0, 0, 0.947),
-      rgba(2, 4, 30, 0.918),
-      rgb(6, 49, 105),
-      #42879a,
-      rgb(5, 213, 240)
-    );
-    color: rgb(212, 253, 195);
-
+.light-mode footer {
+  background: linear-gradient(
+    to right,
+    rgb(58, 245, 255),
+    #42879a,
+    rgb(6, 49, 105),
+    rgba(2, 4, 30, 0.934),
+    rgba(0, 0, 0, 0.947),
+    rgba(2, 4, 30, 0.918),
+    rgb(6, 49, 105),
+    #42879a,
+    rgb(5, 213, 240)
+  );
+  color: rgb(212, 253, 195);
 }
-
-
 
 header {
   background: black;
@@ -63,25 +58,23 @@ header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-
 }
 
-h1{
+h1 {
   margin-top: 50px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 .imagenCabecera {
   max-width: 100%;
   height: 160px;
   opacity: 0;
-  transition: opacity 3s ease;
+  transition: opacity 1s ease;
 }
 .imagenCabecera.mostrar {
   opacity: 1;
 }
 
-
-footer{
+footer {
   background: linear-gradient(
     to right,
     rgb(58, 245, 255),
@@ -96,9 +89,8 @@ footer{
   );
   color: rgb(212, 253, 195);
   text-align: center;
-  padding:50px;
+  padding: 50px;
   text-decoration: none;
-
 }
 footer a {
   margin: 10px;
@@ -107,7 +99,7 @@ footer a {
   font-size: 10px;
   font-weight: bold;
 }
-footer p{
+footer p {
   font-size: 15px;
   margin-top: 20px;
 }
@@ -117,10 +109,8 @@ footer p{
     display: block;
   }
 
-  h1{
+  h1 {
     margin-top: 20px;
     font-size: 30px;
   }
-
-
 }

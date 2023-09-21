@@ -1,7 +1,6 @@
-.light-mode .game{
+.light-mode .game {
   background-color: rgba(197, 255, 255, 0.671);
 }
-
 
 .game {
   display: flex;
@@ -18,8 +17,6 @@
   margin-top: 50px;
 }
 
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -34,12 +31,10 @@
   margin: 10px;
 }
 
-
 @media (max-width: 768px) {
   .game {
     margin: 10px;
   }
-
 }
 
 .board-row {
@@ -68,7 +63,6 @@
   padding: 20px;
   color: rgb(255, 147, 226);
 }
-
 
 button:hover {
   background-color: #ff0000;

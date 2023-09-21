@@ -1,21 +1,19 @@
 .light-mode {
-  .catalogo{
+  .catalogo {
     background-color: #fdfae5;
   }
-  .titulo{
-  color: rgb(1, 140, 227);
+  .titulo {
+    color: rgb(1, 140, 227);
   }
-  
+
   .tarjeta {
     background-color: rgb(255, 254, 251);
   }
-  
+
   .tarjeta-title {
     color: rgb(255, 0, 200);
   }
-  
-  }
-
+}
 
 .catalogo {
   background-color: rgba(0, 0, 0, 0.909);
@@ -47,7 +45,7 @@
 }
 
 .tarjeta-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
   padding: 20px;
   font-weight: bold;
@@ -61,7 +59,7 @@
   font-size: 1rem;
   color: rgb(0, 11, 39);
 }
-.catalogo p{
+.catalogo p {
   color: rgb(59, 59, 59);
   font-size: 15px;
   font-weight: bold;
@@ -87,7 +85,7 @@
 .imagen-juego {
   border: 1px solid #ffca2cff;
   width: 100%;
-  height:200px;
+  height: 200px;
   padding: 3px;
   border-radius: 8px;
   margin-top: 10px;
@@ -95,13 +93,12 @@
 
 @media (max-width: 768px) {
   .catalogo {
-padding: 5px;
-    max-width:100%;
-
+    padding: 5px;
+    max-width: 100%;
   }
 
   .tarjeta {
-    width:100%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
@@ -111,6 +108,4 @@ padding: 5px;
   .tarjeta-text {
     font-size: 15px;
   }
-
-
 }
