@@ -83,7 +83,7 @@ function Topo() {
               </div>
               {holeWithMole === index && (
                 <div className="mole">
-                  <img src={moleImage} alt="Mole" style={{ width: '80px', height: 'auto' }} />
+                  <img src={moleImage} alt="Mole" style={{ width: '100px', height: 'auto' }} />
                 </div>
               )}
             </div>
