@@ -1,30 +1,76 @@
+.Topo {
+  text-align: center;
+  border: 2px solid rgb(64, 255, 0);
+  background-color: #f8f8f827;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 500px;
+  height: 500px;
+  margin: 10px auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
 
-/* Topo.css */
+}
 
-.topoGame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /* Ajusta la altura según tus necesidades */
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #f8f8f8;
+  border-radius: 10px;
 }
 
 .hole {
   position: relative;
-  width: 200px; /* Ajusta el tamaño del agujero según tus necesidades */
-  height: 200px; /* Ajusta el tamaño del agujero según tus necesidades */
-  margin: 10px; /* Ajusta el margen entre agujeros según tus necesidades */
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
   overflow: hidden;
 }
 
-.dirt {
-  width: 100%;
-  height: 100%;
+.hole .dirt {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("dirt.png") bottom center no-repeat;
+  background-size: contain;
+  z-index: 2;
 }
 
-.mole {
+.hole.up .mole {
   position: absolute;
-  top: 100%; /* El mole está oculto detrás del agujero inicialmente */
-  left: 0;
-  transition: top 0.3s ease; /* Agrega una transición suave para la aparición/desaparición */
-  visibility: hidden; /* Inicialmente oculto */
+  width: 100px;
+  height: 100px;
+  background: url("mole.png") center bottom no-repeat;
+  background-size: cover;
+  z-index: 1;
+  animation: moveUp 0.2s ease;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hole .mole {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("mole.png") center bottom no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+p {
+  font-size: 1.5rem;
+  color: cadetblue;
 }
