@@ -1,6 +1,6 @@
 .light-mode {
   .texto {
-    background-color: #fdfae5;
+    background-color: #fdfae5ca;
   }
   .titulo {
     color: rgb(1, 140, 227);
@@ -16,7 +16,7 @@
 }
 
 .texto {
-  background-color: rgba(0, 0, 0, 0.909);
+  background-color: rgba(0, 0, 0, 0.621);
   border: 1px solid rgb(131, 226, 255);
   max-width: 800px;
   margin: 0 auto;
@@ -28,7 +28,7 @@
 
 .titulo {
   margin-bottom: 30px;
-  color: rgb(129, 38, 203);
+  color: rgb(82, 28, 168);
   text-align: center;
   font-size: 25px;
   font-family: "Press Start 2P", cursive;

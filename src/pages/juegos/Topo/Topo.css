@@ -1,16 +1,22 @@
 .Topo {
   text-align: center;
-  border: 2px solid rgb(64, 255, 0);
-  background-color: #f8f8f827;
+  border: 1px solid rgb(64, 255, 0);
+  background-color: rgba(0, 0, 0, 0.639);
   padding: 10px;
   border-radius: 10px;
   max-width: 500px;
-  height: 500px;
-  margin: 10px auto;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
   margin-top: 50px;
-  margin-bottom: 60px;
 
 }
+
+.light-mode .Topo {
+  background-color: rgba(197, 255, 255, 0.671);
+
+}
+
 
 .game-container {
   display: grid;
@@ -18,7 +24,8 @@
   gap: 10px;
   max-width: 400px;
   margin: 50px auto;
-  background-color: #f8f8f8;
+  background-image: url("https://media.istockphoto.com/id/119145145/es/vector/patr%C3%B3n-sin-costuras-de-hierba.jpg?s=612x612&w=0&k=20&c=g8GEfiHLkpSwJE6oGUFISnhIuQByTl6Qms4CYEsDEc4=");
+  background-size: cover;
   border-radius: 10px;
 }
 
@@ -46,7 +53,7 @@
   background: url("mole.png") center bottom no-repeat;
   background-size: cover;
   z-index: 1;
-  animation: moveUp 0.2s ease;
+  animation: moveUp 0.1s ease;
 }
 
 @keyframes moveUp {

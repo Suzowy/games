@@ -2,7 +2,7 @@ const Home = () => {
   const backgroundStyle = {
     backgroundImage:
       'url("https://www.wallpapertip.com/wmimgs/94-940820_arcade-wallpaper.jpg")',
-    backgroundSize: "100% 100%",
+    backgroundSize: "100% 120%",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     minHeight: "70vh",

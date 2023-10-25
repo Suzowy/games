@@ -34,10 +34,10 @@ function Index() {
   }, [modoOscuro]);
 
   const imagenModoOscuro =
-    "https://wallpapers.com/images/hd/hd-pacman-qtm4064qk559tkc7.jpg";
+    "./dark.png";
 
   const imagenModoClaro =
-    "https://www.gifss.com/videojuegos/pacman/images/gif-pacman-09.gif";
+    "light.gif";
 
   const imagenActual = modoOscuro ? imagenModoOscuro : imagenModoClaro;
 
@@ -53,8 +53,8 @@ function Index() {
             {modoOscuro ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 fill="#fffe04"
                 className="bi bi-moon-stars"
                 viewBox="0 0 16 16"
@@ -63,7 +63,7 @@ function Index() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="#fffe04"
+                  fill="white"
                   class="bi bi-moon-stars"
                   viewBox="0 0 16 16"
                 >
@@ -74,8 +74,8 @@ function Index() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 fill="#ff5014ff"
                 className="bi bi-brightness-high"
                 viewBox="0 0 16 16"
@@ -84,7 +84,7 @@ function Index() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="#f7c500"
+                  fill="black"
                   class="bi bi-brightness-high-fill"
                   viewBox="0 0 16 16"
                 >

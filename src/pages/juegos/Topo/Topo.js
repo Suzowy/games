@@ -7,6 +7,7 @@ function Topo() {
   const [score, setScore] = useState(0);
   const [holeWithMole, setHoleWithMole] = useState(null);
   const [gameOver, setGameOver] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(60);
 
   const showMole = () => {
     const randomIndex = Math.floor(Math.random() * 9);
@@ -26,11 +27,21 @@ function Topo() {
   useEffect(() => {
     showMole();
 
-    setTimeout(() => {
-      setGameOver(true);
-    }, 60000);
+    const countdownInterval = setInterval(() => {
+      if (timeLeft > 0 && !gameOver) {
+        setTimeLeft(timeLeft - 1);
+      } else {
+        setGameOver(true);
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(countdownInterval);
+    };
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [timeLeft, gameOver]);
 
   const handleMoleClick = (index) => {
     if (index === holeWithMole) {
@@ -42,6 +53,7 @@ function Topo() {
   const handleRestart = () => {
     setScore(0);
     setGameOver(false);
+    setTimeLeft(60);
     showMole();
   };
 
@@ -50,6 +62,7 @@ function Topo() {
   return (
     <div className="Topo">
       <p>Puntuación: {score}</p>
+      <p>tiempo restante: {timeLeft} segundos</p>
       {gameOver ? (
         <div className="game-won">
           <h2>{gameMessage}</h2>

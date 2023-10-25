@@ -18,22 +18,21 @@
 
 /* Estilos para el modo claro */
 .light-mode {
-  background-color: #ece8e8;
+  background-color: #cddcda;
 }
 /* Estilos para el modo oscuro */
 .dark-mode {
-  background-color: #000000;
+  background-color: #151515;
   color: #ffffff;
 }
 
 body {
-  background-color: #d6d0c7ff;
   margin: 0;
 }
 
 .light-mode header {
-  background: #ece8e8;
-  color: #ff9999;
+  background: #cddcda;
+  color: #42879a;
 }
 .light-mode footer {
   background: linear-gradient(
@@ -52,8 +51,8 @@ body {
 }
 
 header {
-  background: black;
-  color: #fffe04ff;
+  background: #151515;
+  color: #fefc03;
   text-align: center;
   display: flex;
   justify-content: center;
