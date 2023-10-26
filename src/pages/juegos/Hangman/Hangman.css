@@ -1,6 +1,6 @@
 .light-mode {
   .hangman-container {
-    background-color: rgba(197, 255, 255, 0.671);
+    background: linear-gradient(to bottom, #e5ebdf, rgba(253, 211, 152, 0.377));
   }
   .hangman-container h3 {
     color: #ff6905;
@@ -18,12 +18,12 @@
 
 .hangman-container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.909);
+  background: linear-gradient(to bottom, #e5ebdf, rgb(0, 0, 0));
   border: 1px solid rgb(255, 0, 0);
   padding: 10px;
   border-radius: 10px;
   max-width: 500px;
-  height: 600px;
+  height: auto;
   margin: 10px auto;
   margin-top: 50px;
 }
@@ -46,7 +46,7 @@ h2 {
 h3 {
   padding: 20px;
   font-size: 24px;
-  color: #ffffff;
+  color: #e75555;
   font-weight: bold;
 }
 
@@ -107,15 +107,7 @@ p {
   color: black;
 }
 
-.vertical-hangman {
-  text-align: center;
-  background-color: rgba(226, 226, 226, 0.632);
-  padding: 3%;
-  border-radius: 10px;
-  width: 30%;
-  max-width: 150px;
-  margin: 10px auto;
-}
+
 
 @media (max-width: 768px) {
   .hangman-container {

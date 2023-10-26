@@ -14,6 +14,7 @@ function TicTacToe() {
   const [currentPlayer, setCurrentPlayer] = useState("X");
   const [isStarted, setIsStarted] = useState(false);
   const [gameMessage, setGameMessage] = useState("");
+  const [hasMoved, setHasMoved] = useState(false); // Variable para rastrear si se ha realizado algún movimiento
 
   const calculateWinner = (squares) => {
     const lines = [
@@ -78,6 +79,7 @@ function TicTacToe() {
     setCurrentPlayer("X");
     setIsStarted(false);
     setGameMessage("");
+    setHasMoved(false); // Reiniciar hasMoved cuando se reinicia el juego
   }, []);
 
   const handleClick = (i) => {
@@ -91,11 +93,18 @@ function TicTacToe() {
     boardCopy[i] = currentPlayer;
     setBoard(boardCopy);
     setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
+    setHasMoved(true); // Establecer hasMoved en true después del primer movimiento
   };
 
   const renderSquare = (i) => (
     <button className="square" onClick={() => handleClick(i)}>
-      {board[i]}
+      {hasMoved && board[i] ? ( // Mostrar la imagen solo si ha habido movimiento y la casilla no está vacía
+        <img
+          src={board[i] === "X" ? "x.jpg" : "o.jpg"}
+          alt={board[i]}
+          style={{ width: "100%", height: "100%" }}
+        />
+      ) : null}
     </button>
   );
 
@@ -168,3 +177,4 @@ function TicTacToe() {
 }
 
 export default TicTacToe;
+

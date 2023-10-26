@@ -1,5 +1,5 @@
 .light-mode .game {
-  background-color: rgba(197, 255, 255, 0.671);
+  background-color: #f3f4e29d;
 }
 
 .game {
@@ -47,7 +47,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background-color: rgb(230, 96, 138);
+  background-color: #fb9998;
   color: black;
   border-radius: 10px;
   cursor: pointer;
@@ -61,7 +61,7 @@
 .game-info {
   font-size: 25px;
   padding: 20px;
-  color: rgb(255, 147, 226);
+  color: #ec7876;
 }
 
 button:hover {

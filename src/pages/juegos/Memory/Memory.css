@@ -1,6 +1,6 @@
 .light-mode {
   .board {
-    background-color: rgba(197, 255, 255, 0.671);
+    background-color: #e5ebdf;
   }
 }
 .card {
@@ -10,7 +10,7 @@
   margin: 10px;
   cursor: pointer;
   display: inline-block;
-  border: 1px solid rgba(255, 163, 76, 0.744);
+  border: 1px solid rgba(199, 137, 2, 0.603)
 }
 
 .card .card-inner {
@@ -42,9 +42,10 @@
 
 .board {
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.909);
-  border: 1px solid rgb(255, 123, 0);
+  background-color: #00000068;
+  border: 1px solid rgb(255, 183, 0);
   max-width: 600px;
+  height:auto;
   margin: 0 auto;
   margin-bottom: 60px;
   margin-top: 50px;
@@ -62,7 +63,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.758);
+  background-color: rgba(30, 40, 56, 0.792);
   position: fixed;
   top: 0;
   left: 0;

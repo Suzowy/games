@@ -7,16 +7,19 @@
   }
 
   .tarjeta {
-    background-color: rgba(255, 254, 251, 0.699);
+    background-color: #f3f4e2;
   }
 
   .tarjeta-title {
     color:#64b9c1;
   }
+  .tarjeta-text {
+    color: rgb(0, 11, 39);
+  }
 }
 
 .catalogo {
-  background-color: rgba(0, 0, 0, 0.265);
+  background-color: #151515;
   margin: 0 auto;
   padding: 50px;
   text-align: center;
@@ -33,7 +36,7 @@
   margin: 0 10px;
   margin-bottom: 20px;
   border: 2px solid rgb(0, 191, 255);
-  background-color: rgba(232, 231, 231, 0.813);
+  background-color: #5c5c5c43;
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
 }
@@ -45,22 +48,21 @@
 }
 
 .tarjeta-title {
-  font-family: "Press Start 2P", cursive;
   text-align: center;
   padding: 20px;
   font-weight: bold;
-  color: #521ca8;
-  font-size: 15px;
-  font-weight: 200;
+  color: #5b2aab;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .tarjeta-text {
   padding: 20px;
   font-size: 1rem;
-  color: rgb(0, 11, 39);
+  color: rgb(151, 151, 151);
 }
 .catalogo p {
-  color: rgb(59, 59, 59);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   font-weight: bold;
 }
