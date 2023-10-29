@@ -82,7 +82,7 @@ const Dashboard = () => {
           />
         </>
       ),
-      enlace: "/Default",
+      enlace: "/GuessWho",
     },
     {
       titulo: "Juego de memoria",
@@ -114,7 +114,7 @@ const Dashboard = () => {
           />
         </>
       ),
-      enlace: "/Default",
+      enlace: "/Topo",
     },
   ];
 

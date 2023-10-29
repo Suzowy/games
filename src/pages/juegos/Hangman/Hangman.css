@@ -67,9 +67,12 @@ p {
   background-color: #ff4517;
   color: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 1px 1px 3px rgb(255, 210, 168);
+  box-shadow: 1px 2px 5px rgb(0, 0, 0);
   cursor: pointer;
 }
+
+
+
 
 .game-won button {
   margin: 20px;

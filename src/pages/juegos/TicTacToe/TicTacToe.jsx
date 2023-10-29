@@ -125,6 +125,7 @@ function TicTacToe() {
         setTimeout(() => handleClick(computerMove), 1000);
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [board, winner, currentPlayer]);
 
   return (

@@ -1,8 +1,105 @@
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+.light-mode
+  .GuessWho {
+    background-color: #e5ebdf;
   }
+.GuessWho {
+  border-radius: 8px;
+  background-color: #00000068;
+  border: 1px solid rgb(88, 20, 161);
+  max-width: 700px;
+  height:auto;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 20px;
+}
+
+.character-card {
+  margin: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+
+
+.secretCharacter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(214, 214, 214);
+}
+
+.rotated {
+  transform: rotateY(180deg);
+  transition: transform 1s ease;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.game-won button {
+  margin: 20px;
+  background-color: #767676;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 2px solid #ddff00;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonAdivino {
+margin: 10px;
+border-radius: 5px;
+background-color: #3b8497;
+color: #e5ebdf;
+}
+.question{
+width: 50%;
+align-items: center;
+margin: 10px;
+}
+.characterSelection{
+width: 50%;
+}
+
+@media (max-width: 768px) {
+
+  .GuessWho{
+    margin: 5px;
+  }
+
+  .personajes {
+    width: 70px;
+    height: 70px;
+   
+  }
+.nombre{
+  font-size: 20px;
+}
+
+.question{
+  width: 100%;
+  }
+  .characterSelection{
+  width: 100%;
+  }
+
+}

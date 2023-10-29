@@ -89,7 +89,7 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Default" onClick={closeMenu}>
+                  <Link to="/GuessWho" onClick={closeMenu}>
                     ¿Quién es quién?
                   </Link>
                 </li>
