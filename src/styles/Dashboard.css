@@ -44,7 +44,7 @@
 .tarjeta:hover {
   transform: translateY(-5px);
   border: 2px solid rgb(86, 255, 8);
-  box-shadow: 0 4px 10px rgb(110, 110, 110);
+  box-shadow: 0 4px 10px rgb(193, 193, 193);
 }
 
 .tarjeta-title {
@@ -86,7 +86,6 @@
 }
 
 .imagen-juego {
-  border: 1px solid #ffca2cff;
   width: 100%;
   height: 200px;
   padding: 3px;

@@ -14,7 +14,7 @@ function TicTacToe() {
   const [currentPlayer, setCurrentPlayer] = useState("X");
   const [isStarted, setIsStarted] = useState(false);
   const [gameMessage, setGameMessage] = useState("");
-  const [hasMoved, setHasMoved] = useState(false); // Variable para rastrear si se ha realizado algún movimiento
+  const [hasMoved, setHasMoved] = useState(false);
 
   const calculateWinner = (squares) => {
     const lines = [
@@ -41,36 +41,31 @@ function TicTacToe() {
   };
 
   const calculateBestMove = (squares) => {
-    // Primero, verificamos si hay un movimiento que pueda ganar el juego
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
         const squaresCopy = [...squares];
         squaresCopy[i] = "O";
         if (calculateWinner(squaresCopy) === "O") {
-          return i; // Este movimiento ganaría el juego
+          return i;
         }
       }
     }
 
-    // Luego, verificamos si el oponente (jugador X) está a punto de ganar y lo bloqueamos
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
         const squaresCopy = [...squares];
         squaresCopy[i] = "X";
         if (calculateWinner(squaresCopy) === "X") {
-          return i; // Este movimiento bloquearía al jugador X de ganar
+          return i;
         }
       }
     }
 
-    // Si no hay movimientos críticos, simplemente elegimos el primer espacio vacío
     for (let i = 0; i < squares.length; i++) {
       if (squares[i] === null) {
         return i;
       }
     }
-
-    // Si todas las casillas están ocupadas (raro), regresamos -1
     return -1;
   };
 
@@ -79,7 +74,7 @@ function TicTacToe() {
     setCurrentPlayer("X");
     setIsStarted(false);
     setGameMessage("");
-    setHasMoved(false); // Reiniciar hasMoved cuando se reinicia el juego
+    setHasMoved(false);
   }, []);
 
   const handleClick = (i) => {
@@ -93,12 +88,12 @@ function TicTacToe() {
     boardCopy[i] = currentPlayer;
     setBoard(boardCopy);
     setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
-    setHasMoved(true); // Establecer hasMoved en true después del primer movimiento
+    setHasMoved(true);
   };
 
   const renderSquare = (i) => (
     <button className="square" onClick={() => handleClick(i)}>
-      {hasMoved && board[i] ? ( // Mostrar la imagen solo si ha habido movimiento y la casilla no está vacía
+      {hasMoved && board[i] ? (
         <img
           src={board[i] === "X" ? "x.jpg" : "o.jpg"}
           alt={board[i]}

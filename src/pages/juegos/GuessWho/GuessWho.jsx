@@ -394,8 +394,6 @@ class GuessWho extends Component {
 
   handleQuestionAdd = () => {
     const { questions, selectedCharacter } = this.state;
-
-    // Obtén el valor de la pregunta seleccionada del menú desplegable
     const questionIndex = document.getElementById("questionDropdown").value;
     const selectedQuestion = questions[questionIndex];
 
@@ -448,7 +446,6 @@ class GuessWho extends Component {
     return (
       <div className="GuessWho">
         <div className="Character">
-          <h3>¿En que personaje estoy pensando?</h3>
           <CharacterGallery characters={characters} />
         </div>
 

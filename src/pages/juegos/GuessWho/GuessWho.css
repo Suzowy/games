@@ -6,7 +6,7 @@
   border-radius: 8px;
   background-color: #00000068;
   border: 1px solid rgb(88, 20, 161);
-  max-width: 700px;
+  max-width: 980px;
   height:auto;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -89,10 +89,11 @@ width: 50%;
   .personajes {
     width: 70px;
     height: 70px;
-   
+
   }
 .nombre{
   font-size: 20px;
+
 }
 
 .question{
