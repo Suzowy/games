@@ -47,7 +47,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background-color: #fb9a988d;
+  background-color: #fabcbbd9;
   color: black;
   border-radius: 10px;
   cursor: pointer;
@@ -55,7 +55,7 @@
 }
 
 .square:hover {
-  background-color: #e20c3e;
+  background-color: #ff7898c5;
 }
 
 .game-info {

@@ -1,9 +1,9 @@
 .light-mode {
   .hangman-container {
-    background: linear-gradient(to bottom, #e5ebdf, rgba(253, 211, 152, 0.377));
+    background: #e5ebdf;
   }
   .hangman-container h3 {
-    color: #ff6905;
+    color: #ff6600;
   }
 
   .hangman-container p {
@@ -18,7 +18,7 @@
 
 .hangman-container {
   text-align: center;
-  background: linear-gradient(to bottom, #e5ebdf, rgb(0, 0, 0));
+  background: linear-gradient(to bottom, #e5ebdf, rgba(0, 0, 0, 0.806));
   border: 1px solid rgb(255, 0, 0);
   padding: 10px;
   border-radius: 10px;

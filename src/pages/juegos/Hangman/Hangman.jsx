@@ -116,7 +116,7 @@ const Hangman = () => {
   const [remainingAttempts, setRemainingAttempts] = useState(10);
   const [gameMessage, setGameMessage] = useState("");
   const [hangmanState, setHangmanState] = useState(0);
-  const [hangmanImage, setHangmanImage] = useState("inicio.gif");
+  const [hangmanImage, setHangmanImage] = useState("horca.jpg");
   const chooseRandomWord = useCallback(() => {
     const randomIndex = Math.floor(Math.random() * words.length);
     setSelectedWord(words[randomIndex].toLowerCase());
@@ -175,7 +175,7 @@ const Hangman = () => {
     setRemainingAttempts(9);
     setGameMessage("");
     setHangmanState(0);
-    setHangmanImage("inicio.gif");
+    setHangmanImage("horca.jpg");
   }, [chooseRandomWord]);
 
   useEffect(() => {
